@@ -6,15 +6,16 @@ This role automates the process for building ngx_pagespeed from source following
 Requirements
 ------------
 
-N/A
+This has currently been tested against a Centos 7 box, but I hope to add debian and other distro support in the future.
 
 Role Variables
 --------------
 
-nps_version: 1.9.32.10
-nginx_version: 1.8.0
-build_dir: /tmp/build-nginx-pagespeed
-nps_release: release-{{nps_version}}-beta
+* nps_version: 1.9.32.10 - the nginx pagespeed version
+* nginx_version: 1.8.0 - the nginx version
+* build_dir: /tmp/build-nginx-pagespeed - the build directory (leave this)
+* nps_release: release-{{nps_version}}-beta - the nginx page speed release file pattern (leave this unless Google change their naming conventions) 
+```
 
 Dependencies
 ------------
