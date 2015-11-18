@@ -1,6 +1,8 @@
 packages:
+ - gcc
  - gcc-c++ 
  - pcre-devel 
  - zlib-devel 
  - make 
  - unzip
+ - openssl-devel
