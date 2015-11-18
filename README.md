@@ -15,7 +15,6 @@ Role Variables
 * nginx_version: 1.8.0 - the nginx version
 * build_dir: /tmp/build-nginx-pagespeed - the build directory (leave this)
 * nps_release: release-{{nps_version}}-beta - the nginx page speed release file pattern (leave this unless Google change their naming conventions) 
-```
 
 Dependencies
 ------------
