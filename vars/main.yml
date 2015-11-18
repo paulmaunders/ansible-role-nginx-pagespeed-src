@@ -1,0 +1,6 @@
+---
+# vars file for ansible-role-nginx-pagespeed
+nps_version: 1.9.32.10
+nginx_version: 1.8.0
+build_dir: /tmp/build-nginx-pagespeed
+nps_release: release-{{nps_version}}-beta 

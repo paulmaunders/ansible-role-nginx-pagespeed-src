@@ -1,0 +1,6 @@
+packages:
+ - gcc-c++ 
+ - pcre-devel 
+ - zlib-devel 
+ - make 
+ - unzip

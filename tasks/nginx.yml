@@ -1,0 +1,18 @@
+---
+- name: Download nginx
+  get_url: url=http://nginx.org/download/nginx-{{nginx_version}}.tar.gz dest={{build_dir}}/nginx-{{nginx_version}}.tar.gz
+
+#- name: Untar nginx
+#  command: tar -xzvf {{build_dir}}/nginx-{{nginx_version}}.tar.gz -C {{build_dir}}
+
+- name: Unarchive nginx
+  unarchive: src={{build_dir}}/nginx-{{nginx_version}}.tar.gz dest={{build_dir}} copy=no
+
+- name: Configure nginx
+  command: ./configure --add-module="{{build_dir}}/ngx_pagespeed-{{nps_release}}" chdir="{{build_dir}}/nginx-{{nginx_version}}"
+
+- name: Make nginx
+  command: make chdir="{{build_dir}}/nginx-{{nginx_version}}"
+
+- name: Install nginx
+  command: make install chdir="{{build_dir}}/nginx-{{nginx_version}}"
