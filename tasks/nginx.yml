@@ -51,9 +51,5 @@
 - name: Add systemctl scripts
   copy: src=nginx.service dest=/usr/lib/systemd/system/nginx.service owner=root group=root
 
-# This step was copied from the RPM's postinstall scriptlet, hoever  I'm not totally sure what it does, or if/why it is needed.
-- name: Register the nginx service
-  command: /usr/bin/systemctl preset nginx.service
-
 - name: Enable nginx
   service: name=nginx state=started enabled=yes
