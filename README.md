@@ -32,7 +32,7 @@ Here's an example of how to use with a vagrant box...
   sudo: True
   gather_facts: True
   roles:
-    - ansible-role-nginx-pagespeed
+    - ansible-role-nginx-pagespeed-src
 ```
 
 License
