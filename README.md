@@ -6,7 +6,7 @@ This role automates the process for building ngx_pagespeed from source following
 Requirements
 ------------
 
-This has currently been tested against a [Centos 7 box](https://github.com/paulmaunders/vagrant-nginx-pagespeed), but I hope to add debian and other distro support in the future.
+This has currently been tested against a [Centos 7 box](https://github.com/paulmaunders/vagrant-nginx-pagespeed-src), but I hope to add debian and other distro support in the future.
 
 Role Variables
 --------------
