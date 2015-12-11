@@ -1,4 +1,4 @@
-nginx-pagespeed
+nginx-pagespeed-src
 =========
 
 This role automates the process for building ngx_pagespeed from source following the steps outlined here: https://developers.google.com/speed/pagespeed/module/build_ngx_pagespeed_from_source
